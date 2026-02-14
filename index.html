@@ -7,6 +7,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   </head>
   <body>
     <nav id="desktop-nav">
@@ -42,7 +43,7 @@
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Hassan Ibrahim</h1>
+        <h1 class="title"><span id="typed-name" data-name="Hassan Ibrahim"></span><span class="cursor" aria-hidden="true"></span></h1>
         <p class="section__text__p2">Software Engineer | Backend Developer</p>
         <div class="btn-container">
           <button
@@ -75,13 +76,13 @@
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
+        <!--<div class="section__pic-container">
           <img
             src="./assets/about-pic.png"
             alt="Profile picture"
             class="about-pic"
           />
-        </div>
+        </div> -->
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
@@ -91,7 +92,7 @@
                 class="icon"
               />
               <h3>Experience</h3>
-<p>Backend Systems, REST APIs <br />Embedded & IoT Projects</p>
+<p>Backend Systems, REST APIs <br />Embedded Systems & IoT Projects</p>
             </div>
             <div class="details-container">
               <img
@@ -101,9 +102,11 @@
               />
               <h3>Education</h3>
 <p>
-B.Sc. in Communication Engineering<br>
-Focus: Embedded Systems, IoT, and Backend Development<br>
-Relevant Coursework: Signals, Communication Systems, Microcontrollers
+<h4>- B.Sc. in Communication and Electronics Engineering, Alexandria University</h4>
+Focus: Embedded Systems, IoT, and Backend Development<br><br>
+
+<h4>- Digital Egypt Builders Pioneers (DEPI)</h4>
+Track: Software Development - Full stack .Net Web Developer
 </p>
             </div>
           </div>
@@ -133,66 +136,42 @@ Relevant Coursework: Signals, Communication Systems, Microcontrollers
             <h2 class="experience-sub-title">Frontend Development</h2>
             <div class="article-container">
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <i class="fa-brands fa-html5"></i>
                 <div>
                   <h3>HTML</h3>
                   <p>Experienced</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <i class="fa-brands fa-css3-alt"></i>
                 <div>
                   <h3>CSS</h3>
                   <p>Experienced</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <i class="fa-brands fa-sass"></i>
                 <div>
                   <h3>SASS</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <i class="fa-brands fa-js-square"></i>
                 <div>
                   <h3>JavaScript</h3>
                   <p>Basic</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <i class="fa-brands fa-js"></i>
                 <div>
                   <h3>TypeScript</h3>
                   <p>Basic</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+                <i class="fa-solid fa-palette"></i>
                 <div>
                   <h3>Material UI</h3>
                   <p>Intermediate</p>
@@ -205,11 +184,7 @@ Relevant Coursework: Signals, Communication Systems, Microcontrollers
   <div class="article-container">
 
     <article>
-      <img
-        src="./assets/checkmark.png"
-        alt=""
-        class="icon"
-      />
+      <i class="fa-brands fa-node-js"></i>
       <div>
         <h3>Node.js</h3>
         <p>Advanced</p>
@@ -217,11 +192,7 @@ Relevant Coursework: Signals, Communication Systems, Microcontrollers
     </article>
 
     <article>
-      <img
-        src="./assets/checkmark.png"
-        alt=""
-        class="icon"
-      />
+      <i class="fa-solid fa-server"></i>
       <div>
         <h3>Express.js</h3>
         <p>Advanced</p>
@@ -229,11 +200,7 @@ Relevant Coursework: Signals, Communication Systems, Microcontrollers
     </article>
 
     <article>
-      <img
-        src="./assets/checkmark.png"
-        alt=""
-        class="icon"
-      />
+      <i class="fa-solid fa-database"></i>
       <div>
         <h3>PostgreSQL</h3>
         <p>Intermediate</p>
@@ -241,11 +208,7 @@ Relevant Coursework: Signals, Communication Systems, Microcontrollers
     </article>
 
     <article>
-      <img
-        src="./assets/checkmark.png"
-        alt=""
-        class="icon"
-      />
+      <i class="fa-brands fa-microsoft"></i>
       <div>
         <h3>.NET Core</h3>
         <p>Intermediate</p>
@@ -253,11 +216,7 @@ Relevant Coursework: Signals, Communication Systems, Microcontrollers
     </article>
 
     <article>
-      <img
-        src="./assets/checkmark.png"
-        alt=""
-        class="icon"
-      />
+      <i class="fa-solid fa-network-wired"></i>
       <div>
         <h3>REST APIs</h3>
         <p>Advanced</p>
@@ -265,11 +224,7 @@ Relevant Coursework: Signals, Communication Systems, Microcontrollers
     </article>
 
     <article>
-      <img
-        src="./assets/checkmark.png"
-        alt=""
-        class="icon"
-      />
+      <i class="fa-brands fa-github"></i>
       <div>
         <h3>Git & GitHub</h3>
         <p>Intermediate</p>
@@ -392,6 +347,10 @@ Relevant Coursework: Signals, Communication Systems, Microcontrollers
           />
           <p><a href="https://www.linkedin.com/in/hassanibrahiimm/">LinkedIn</a></p>
         </div>
+        <div class="contact-info-container">
+          <i class="fa-brands fa-whatsapp"></i>
+          <p><a href="https://wa.me/201286851282">+201286851282</a></p>
+        </div>
       </div>
     </section>
     <footer>
@@ -405,7 +364,7 @@ Relevant Coursework: Signals, Communication Systems, Microcontrollers
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 Hassan Ibrahim. All Rights Reserved.</p>
+      <p>Copyright &#169; 2026 Hassan Ibrahim. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
   </body>
